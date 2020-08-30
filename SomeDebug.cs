@@ -42,7 +42,7 @@ namespace SomeDebug {
                 Logger.Log(Global.Application.CurrentVersion);
 			}
 			else {
-				Notifier.Notify("Silencer Plugin loaded!");
+				Notifier.Notify($"{ System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}" + " Plugin loaded!");
 				Logger.Log("Plugin Version v" + Global.Application.CurrentVersion + " loaded successfully");
 			}
 
