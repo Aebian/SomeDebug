@@ -23,8 +23,8 @@ namespace SomeDebug {
             Global.Application.ConfigPath = "Plugins/";
             Global.Application.CurrentVersion = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Version}";
 
-            Global.Controls.CallDebug = System.Windows.Forms.Keys.F7;
-            Global.Controls.CallDebugModifier = System.Windows.Forms.Keys.LControlKey;
+            Global.Controls.CallDebug = System.Windows.Forms.Keys.F6;
+            Global.Controls.CallDebugModifier = System.Windows.Forms.Keys.LShiftKey;
 
             Global.Application.DebugLogging = true;
 

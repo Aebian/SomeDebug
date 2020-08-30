@@ -26,7 +26,7 @@ namespace SomeDebug.Utils
             {
                 GameFiber.Yield();
 
-                if ((Game.IsKeyDownRightNow(Global.Controls.CallDebugModifier) && Game.IsKeyDown(Global.Controls.CallDebug) || Global.Controls.CallDebugModifier == Keys.None && Game.IsKeyDown(Global.Controls.CallDebug)))
+                if (Game.IsKeyDownRightNow(Global.Controls.CallDebugModifier) && Game.IsKeyDown(Global.Controls.CallDebug) || Global.Controls.CallDebugModifier == Keys.None && Game.IsKeyDown(Global.Controls.CallDebug))
                 {
                     Global.Dynamics.CurrentPlayerPos = Game.LocalPlayer.Character.Position;
                     Global.Dynamics.CurrentPlayerHeading = Game.LocalPlayer.Character.Heading;
@@ -41,7 +41,7 @@ namespace SomeDebug.Utils
         private static void DebugExecution()
         {
 
-
+            Notifier.Notify("Debug Notify #1");
 
         }
        
